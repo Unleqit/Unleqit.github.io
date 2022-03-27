@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <body> 
+        <p id="verify">Verifying...</p>
         <script>
-            if (navigator.userAgent == "unlqvt Client")
+            if (navigator.userAgent.includes('unlqvt Client'))
             {
-                <p>Access allowed</p>
+                document.getElementById("verify").innerHTML = "Access allowed"
             }
             else
             {
-                <p>Access denied</p>
+                document.getElementById("verify").innerHTML = "Access denied"
             }
         </script>
     </body>

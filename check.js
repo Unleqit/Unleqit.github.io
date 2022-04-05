@@ -1,4 +1,4 @@
-const response = [{text: "Access allowed", allowed: 'false'}];
+const response = [{text: "Access", allowed: 'false'}];
 
 function validate()
 {
@@ -14,7 +14,7 @@ function validate()
     alert(data);
     var dlAnchorElem = document.getElementById("downloadAnchorElem");
     dlAnchorElem.setAttribute("href", data);
-    dlAnchorElem.setAttribute("download", "check.json");
+    dlAnchorElem.setAttribute("download", "verify.json");
     dlAnchorElem.click();
 
     

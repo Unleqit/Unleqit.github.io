@@ -1,10 +1,10 @@
-var response = [{"Access allowed": allowed}];
+const response = [{text: "Access allowed", allowed: 'false'}];
 
 function validate()
 {
     if (navigator.userAgent.includes('unlqvt Client'))
     {
-        response[0].allowed = 'true';
+        response[0].allowed = 'true'; 
     }
     else
     {

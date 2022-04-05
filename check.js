@@ -1,5 +1,6 @@
 var response = [{"Access allowed": allowed}];
-document.getElementById("response")
+document.getElementById("response").onload = validate();
+
 
 function validate()
 {

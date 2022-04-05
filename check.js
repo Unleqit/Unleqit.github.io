@@ -1,10 +1,7 @@
 var response = [{"Access allowed": allowed}];
-document.getElementById("response").onload = validate();
-
 
 function validate()
 {
-    alert("test")
     if (navigator.userAgent.includes('unlqvt Client'))
     {
         response[0].allowed = 'true';
@@ -14,6 +11,7 @@ function validate()
         response[0].allowed = 'false';
     }
     var data = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(response));
+    alert(data);
     var dlAnchorElem = document.getElementById("downloadAnchorElem");
     dlAnchorElem.setAttribute("href", data);
     dlAnchorElem.setAttribute("download", "check.json");

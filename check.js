@@ -4,6 +4,7 @@ document.getElementById("response").onload = validate();
 
 function validate()
 {
+    alert("test")
     if (navigator.userAgent.includes('unlqvt Client'))
     {
         response[0].allowed = 'true';
